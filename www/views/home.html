@@ -1,0 +1,49 @@
+<ion-side-menus cache-view="false">
+  <!-- Left menu -->
+  <ion-side-menu side="left">
+    <div class="list">
+      <div class="item item-avatar">
+        <img src="{{gmailProfile.imageUrl}}">
+        <h2>{{gmailProfile.displayName}}</h2>
+        <p>{{gmailProfile.email}}</p>
+      </div>
+      <a class="item item-icon-left" href="#/profile">
+        <i class="icon ion-android-contact themeOrange"></i>
+        Profile
+      </a>
+      <a class="item item-icon-left" href="#/support">
+        <i class="icon ion-ios-chatbubble themeOrange"></i>
+        Support
+      </a>
+      <a class="item item-icon-left" href="#/login">
+        <i class="icon ion-power themeOrange"></i>
+        Logout
+      </a>
+    </div>
+  </ion-side-menu>
+
+  <ion-side-menu-content>
+    <ion-view title="Home" id="home-page" ng-init="homeInit()">
+    <ion-header-bar align-title="center" class="bar-stable">
+      <div class="buttons">
+        <a class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></a>
+      </div>
+      <h1 class="title">mWarranty</h1>
+      <div class="buttons">
+        <a class="button button-icon icon ion-android-add-circle" href="#/add"></a>
+      </div>
+    </ion-header-bar>
+  <ion-content class="padding">
+     <div ng-repeat="item in itemData" class="list">
+        <a class="item" ng-click="warrantySelect(item)">
+          <h2 class="item-name">{{item.doc.item_name}}</h2>
+          <p class="item-category">{{item.doc.category}}</p><span class="item-exp">{{item.doc.exp_date}}</span> 
+        </a>
+     </div>
+  </ion-content>
+    </ion-view>
+  </ion-side-menu-content>
+
+</ion-side-menus>
+
+

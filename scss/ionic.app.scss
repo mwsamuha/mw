@@ -1,0 +1,161 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+$balanced:                        #FD9226 !default;
+$energized:                       #043178 !default;
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+//LOGIN PAGE
+/* Empty. Add your own CSS if you like */
+button.login-btn {
+    font-family: helvetica;
+    position: absolute;
+    display: block; 
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    bottom: 20px;
+}
+
+.spinner svg {
+    left: 35%;
+    top: 35%;
+    width: 30%;
+    height: 30%;
+    stroke: #444;
+    fill: #444;
+    position: absolute;
+    z-index: 100;
+}
+/* Details Page */
+button.submit-bn {
+    bottom: -10px;
+    position: absolute;
+}
+
+span.selVal {
+    float: right;
+    font-weight: bolder;
+    color: rgba(255, 0, 0, 0.63);
+    font-size: 16px;
+}
+
+img.capture-img {
+    margin-left: auto;
+    margin-top: 24px;
+    width: 150px;
+    height: 150px;
+    margin-right: auto;
+    display: block;
+};
+/*HOME PAGE*/
+i.themeOrange {
+    color: #FD9226 !important;
+}
+
+h2.item-name {
+    color: #444;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: helvetica;
+}
+
+span.item-exp {
+    position: relative;
+    float: right;
+    top: -20px;
+    color: #FD9226;
+    font-weight: 500;
+}
+
+img.thumbItem {
+    width: 25px;
+    height: 20px;
+}
+/* Chat CSS */
+
+.messages li{
+    width: 100% !important;
+    min-height: 50px;
+    margin-top: 10px;
+    height: auto;
+}
+.from-me {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: #0B93F6;
+  border-radius: 25px;
+  float: right;
+}
+.from-me:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -2px;
+  right: -7px;
+  height: 20px;
+  border-right: 20px solid #0B93F6;
+  border-bottom-left-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.from-me:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -2px;
+  right: -56px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+.from-them {
+  position: relative;
+  padding: 10px 20px;
+  background: #E5E5EA;
+  border-radius: 25px;
+  color: black;
+  float: left;
+}
+.from-them:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -2px;
+  left: -7px;
+  height: 20px;
+  border-left: 20px solid #E5E5EA;
+  border-bottom-right-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.from-them:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  bottom: -2px;
+  left: 4px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}

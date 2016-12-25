@@ -1,0 +1,33 @@
+<ion-view title="Details" id="home-page" ng-init="detailsInit()" cache-view="false">
+<ion-header-bar align-title="center" class="bar bar-header bar-stable">
+  <div class="buttons">
+    <a class="button button-icon icon ion-arrow-left-a" href="#/home"></a>
+  </div>
+  <h1 class="title">{{selectedItem.doc.item_name}}</h1>
+</ion-header-bar>
+<ion-content class="has-header">
+  <div class="list">    
+      <a class="item item-icon-left">
+        <i class="icon ion-pin"></i>
+        Category <span class="selVal">{{selectedItem.doc.category}}</span>
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-bag"></i>
+        Vendor <span class="selVal">{{selectedItem.doc.shop_name}}</span>
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-android-calendar"></i>
+        Date of Purchase <span class="selVal">{{selectedItem.doc.billing_date}}</span>
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-android-time"></i>
+        Warranty till <span class="selVal">{{selectedItem.doc.exp_date}}</span>
+      </a>
+      <a class="item item-icon-left" ng-click="downloadRecipt()">
+        <i class="icon ion-ios-download"></i>
+        Download Receipt<span class="selVal"><img id="myThumb" class="thumbItem" src=""/></span>
+      </a>
+      <img src="" class="capture-img" id="myImage"/>
+  </div>
+</ion-content>
+</ion-view>

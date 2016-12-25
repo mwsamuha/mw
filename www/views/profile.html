@@ -1,0 +1,25 @@
+<ion-view title="Profile" id="profile-page" cache-view="false">
+<ion-header-bar align-title="center" class="bar bar-header bar-stable">
+  <div class="buttons">
+    <a class="button button-icon icon ion-arrow-left-a" href="#/home"></a>
+  </div>
+  <h1 class="title">Profile</h1>
+</ion-header-bar>
+<ion-content>
+<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="{{gmailProfile.imageUrl}}">
+    <h2>{{gmailProfile.displayName}}</h2>
+    <p>{{gmailProfile.email}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="{{gmailProfile.imageUrl}}">
+    <p>{{gmailProfile.displayName}}</p>
+    <p>{{gmailProfile.email}}</p>
+  </div>
+
+</div>
+</ion-content>
+</ion-view>

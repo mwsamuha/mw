@@ -1,0 +1,54 @@
+<ion-view title="Details" id="home-page" ng-init="addInit()" cache-view="false">
+<ion-header-bar align-title="center" class="bar bar-header bar-stable">
+  <div class="buttons">
+    <a class="button button-icon icon ion-arrow-left-a" href="#/home"></a>
+  </div>
+  <h1 class="title">Add Items</h1>
+  <div class="buttons">
+    <a class="button button-icon icon ion-ios-barcode-outline" ng-click="scanQR()"></a>
+  </div>
+</ion-header-bar>
+<ion-content class="has-header">
+  <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Item Name</span>
+        <input type="text" placeholder="Item Name" ng-model="itemName">
+      </label>
+      <!--<input class="inputItemName" type="text" placeholder="Item Name" ng-model="itemName">-->
+      <a class="item item-icon-left" modal-select ng-model="category" options="categorySelectables" modal-title="Select a Category" has-search="true">
+        <i class="icon ion-pin"></i>
+        Category <span class="selVal">{{category}}</span>
+        <div class="option">
+        {{option}}
+        </div>
+      </a>
+      <a class="item item-icon-left" modal-select ng-model="vendor" options="vendorSelectables" modal-title="Select a Vendor" has-search="true">
+        <i class="icon ion-bag"></i>
+        Vendor <span class="selVal">{{vendor}}</span>
+        <div class="option">
+        {{option}}
+        </div>
+      </a>
+      <a class="item item-icon-left" ng-click="openDatePicker()">
+        <i class="icon ion-android-calendar"></i>
+        Date of Purchase <span class="selVal">{{dop}}{{addedyer}}</span>
+      </a>
+      <a class="item item-icon-left" modal-select ng-model="warranty" options="warrantySelectables" modal-title="Select a Period" has-search="false">
+        <i class="icon ion-android-time"></i>
+        Warranty Period (in months)<span class="selVal">{{warranty}}</span>
+        <div class="option">
+        {{option}}
+        </div>
+      </a>
+      <a class="item item-icon-left" ng-click="captureBill()">
+        <i class="icon ion-camera"></i>
+        Add Receipt
+      </a>
+      <img src="" ng-show="showCapture" class="capture-img" id="myImage"/>
+  </div>
+
+    <button class="button button-full button-dark submit-bn" ng-click="submitWarranty(itemName,category,vendor,warranty)">
+      Submit
+    </button>
+</ion-content>
+</ion-view>

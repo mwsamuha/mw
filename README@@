@@ -1,0 +1,66 @@
+cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-googleplus --save --variable REVERSED_CLIENT_ID=246308627358-cg77dgi31gokfq0cs02a2uof1lo4fab1.apps.googleusercontent.com
+
+
+Enter keystore password:
+Alias name: androiddebugkey
+Creation date: Dec 18, 2016
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: C=US, O=Android, CN=Android Debug
+Issuer: C=US, O=Android, CN=Android Debug
+Serial number: 1
+Valid from: Sun Dec 18 16:00:42 IST 2016 until: Tue Dec 11 16:00:42 IST 2046
+Certificate fingerprints:
+         MD5:  26:2D:C1:52:0F:CB:6A:F8:46:63:CC:6B:D7:28:D3:98
+         SHA1: 31:0E:E6:F1:C8:12:B6:5C:AC:2D:F2:AF:DE:FC:27:DD:BB:96:3A:A3
+         SHA256: EC:1E:95:9B:C3:E3:36:3E:0C:DC:A6:16:04:05:74:D1:91:A3:FA:CD:DC:81:0A:46:81:56:B5:BA:3C:9F:2F:6F
+         Signature algorithm name: SHA1withRSA
+         Version: 1
+****************************************************************************************         
+246308627358-cg77dgi31gokfq0cs02a2uof1lo4fab1.apps.googleusercontent.com              
+****************************************************************************************         
+          "F:\ACTIVA"
+          
+          keytool -list -v -keystore "F:\ACTIVA" -alias mw -storepass android -keypass android
+          
+          
+F:\ACTIVA>keytool -list -keystore mw.keystore -alias mw
+Enter keystore password:
+mw, Dec 18, 2016, PrivateKeyEntry,
+Certificate fingerprint (SHA1): BB:58:7F:AE:39:33:49:AC:C4:3E:AD:B8:87:4A:F7:9F:B4:21:E5:FE
+**************************************************************************************************
+client ID --->  246308627358-1inq8s5pcq0ssqbsp96lfnin77fhqb10.apps.googleusercontent.com
+**************************************************************************************************
+keytool -exportcert -list -v -alias mw -keystore "F:\ACTIVA\mw.keystore"
+
+cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-googleplus --save --variable REVERSED_CLIENT_ID=246308627358-1inq8s5pcq0ssqbsp96lfnin77fhqb10.apps.googleusercontent.com
+
+Alias name: mw
+Creation date: Dec 18, 2016
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Karthik Muthumari, OU=Hackathon, O=Wipro, L=Bengaluru, ST=Karnataka, C=IN
+Issuer: CN=Karthik Muthumari, OU=Hackathon, O=Wipro, L=Bengaluru, ST=Karnataka, C=IN
+Serial number: 1cf072e3
+Valid from: Sun Dec 18 20:53:20 IST 2016 until: Thu May 05 20:53:20 IST 2044
+Certificate fingerprints:
+         MD5:  56:CC:2D:1B:11:67:B0:B9:A2:75:BD:C3:B2:87:DA:A8
+         SHA1: BB:58:7F:AE:39:33:49:AC:C4:3E:AD:B8:87:4A:F7:9F:B4:21:E5:FE
+         SHA256: 0E:A7:B7:74:2F:CB:64:F7:AF:99:9A:2E:76:B6:7D:C9:93:78:FF:7C:B8:EC:6F:0E:94:75:C5:E2:D3:E3:08:B4
+         Signature algorithm name: SHA256withRSA
+         Version: 3
+
+Extensions:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 10 A0 F0 DC AA 34 AC 34   F0 DA 39 D2 7A 72 76 AB  .....4.4..9.zrv.
+0010: 88 3F 25 6D                                        .?%m
+]
+]
+
+
+https://github.com/EddyVerbruggen/cordova-plugin-googleplus

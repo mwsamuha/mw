@@ -1,0 +1,15 @@
+{
+    "jscodehints.detectedExclusions": [
+        "F:/ACTIVA/mWarranty/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "F:/ACTIVA/mWarranty/www/service-worker.js",
+        "F:/ACTIVA/mWarranty/www/js/app.js",
+        "F:/ACTIVA/mWarranty/www/lib/ng-cordova.min.js",
+        "F:/ACTIVA/mWarranty/www/lib/ionic-modal-select/webpack.config.production.js",
+        "F:/ACTIVA/mWarranty/www/lib/moment/locale/fa.js",
+        "F:/ACTIVA/mWarranty/www/lib/moment/locale/fi.js",
+        "F:/ACTIVA/mWarranty/www/js/controllers/profile.js",
+        "F:/ACTIVA/mWarranty/www/lib/moment/locale/fo.js",
+        "F:/ACTIVA/mWarranty/www/lib/moment/locale/fr-ca.js",
+        "F:/ACTIVA/mWarranty/www/lib/moment/locale/fr-ch.js"
+    ]
+}
